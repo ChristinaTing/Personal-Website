@@ -197,7 +197,9 @@ get_header(); ?>
 					Thanks for visiting my site! I currently live in Toronto, Canada and I am always up for a cup of coffee. If you'd like to reach me for potential jobs, to discuss web-development or even just to have a chat get in touch by email or stalk me on my social media. 
 				</p>
 				<div class="contactform">
-					<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 2 ); } ?>
+					<?php echo do_shortcode('[ninja_forms_display_form id=1]');?>
+
+				<!-- 	echo do_shortcode('[contact-form-7 id="91" title="quote"]'); -->
 				</div>
 
 
